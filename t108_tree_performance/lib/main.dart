@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -10,9 +9,11 @@ void main() {
 //  debugProfileBuildsEnabled = true;
 //  debugProfilePaintsEnabled = true;
 //  debugPaintLayerBordersEnabled = true;
-  runApp(new MaterialApp(
-      theme: ThemeData(
-          primaryColor: Colors.white,
-          textTheme: new Typography(platform: defaultTargetPlatform).white),
-      home: MyPage()));
+  runApp(MaterialApp(
+    theme: ThemeData(
+      primaryColor: Colors.white,
+      textTheme: Typography(platform: defaultTargetPlatform).white,
+    ),
+    home: MyPage(),
+  ));
 }

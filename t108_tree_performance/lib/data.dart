@@ -2,10 +2,10 @@ import 'dart:async';
 import 'dart:math';
 import 'dart:ui';
 
-Stream<int> promotions =
-    new Stream.periodic(const Duration(seconds: 1), (int count) => count).asBroadcastStream();
+final promotions =
+    Stream.periodic(const Duration(seconds: 1), (count) => count);
 
-Random random = new Random();
+final random = Random();
 
-Color getRandomColor() => new Color.fromARGB(0xFF, 100 + random.nextInt(155),
+Color getRandomColor() => Color.fromARGB(0xFF, 100 + random.nextInt(155),
     100 + random.nextInt(155), 100 + random.nextInt(155));
